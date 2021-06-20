@@ -13,7 +13,7 @@ import HomePage from './pages/HomePage'
 import  SettingsPage from './pages/SettingsPage'
 import  EntryPage from './pages/EntryPage'
 import { useAuth } from './auth';
-
+import AddEntryPage from './pages/AddEntryPage';
 
 
 const App: React.FC = () => {
@@ -27,7 +27,10 @@ const App: React.FC = () => {
           <Route exact path="/my/entries">
               <HomePage/>
           </Route>
-          <Route exact path="/my/entries/:id">
+          <Route exact path="/my/entries/add">
+              <AddEntryPage/>
+          </Route>
+          <Route exact path="/my/entries/view/:id">
               <EntryPage/>
           </Route>
           <Route exact path="/my/settings">

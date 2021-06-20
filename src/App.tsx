@@ -5,7 +5,7 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router';
 import AppTabs from './AppTabs';
 import { AuthContext, useAuthInit } from './auth';
 import  LoginPage from './pages/Login'
@@ -33,7 +33,7 @@ const App: React.FC = () => {
           <Route path="/my">
             <AppTabs />
           </Route>
-          <Redirect exact path="/" to="/my/entries"></Redirect>
+          {/* <Redirect exact path="/" to="/my/entries"></Redirect> */}
           <Route>
             <PageNotFound/>
           </Route>

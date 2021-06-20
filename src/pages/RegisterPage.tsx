@@ -56,7 +56,7 @@ const App: React.FC= () => {
             <IonInput type='password' value={password} onIonChange={event=>setPassword(event.detail.value)}></IonInput>
           </IonItem>
         </IonList>
-        {status.error && <IonText color='danger'>Registrattion Failed</IonText>}
+        {status.error && <IonText color='danger'>Registration Failed</IonText>}
 
         <IonButton expand="block" onClick={handleRegister}>Create Account</IonButton>
         <IonButton expand="block" fill="clear" routerLink="/login">
